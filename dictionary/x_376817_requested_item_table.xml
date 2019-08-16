@@ -52,11 +52,12 @@
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_journal_15" type="journal"/>
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_journal_17" type="journal"/>
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_journal_19" type="journal"/>
-        <element label="Primary Assignment Group" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Requested for" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
         <element label="Primary Assigned To" max_length="32" name="u_reference_12" reference="cmdb_ci_appl_dot_net" type="reference"/>
-        <element label="Secondary Assignment Group" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
-        <element dependent="u_reference_2" dependent_on_field="u_reference_2" label="Secondary Assigned To" max_length="32" name="u_reference_3" reference="cmdb_ci_appl_dot_net" type="reference" use_dependent_field="true"/>
-        <element label="Requested for" max_length="32" name="u_reference_5" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Primary Assignment Group" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element dependent="u_reference_2" dependent_on_field="u_reference_2" label="Primary Assignee" max_length="32" name="u_reference_3" reference="cmdb_ci_appl_dot_net" type="reference" use_dependent_field="true"/>
+        <element label="Secondary Assignment Group" max_length="32" name="u_reference_4" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Secondary Assignee" max_length="32" name="u_reference_5" reference="cmdb_ci_appl_dot_net" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Requested for" max_length="40" name="u_string_1" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="u_string_10" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Primary Assignment Group" max_length="40" name="u_string_2" type="string"/>
@@ -67,18 +68,21 @@
         <element attributes="edge_encryption_enabled=true" label="Secondary Assigned to" max_length="40" name="u_string_7" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Short description" mandatory="true" max_length="150" name="u_string_9" type="string"/>
         <index name="index">
-            <element name="u_reference_5"/>
+            <element name="u_reference_4"/>
         </index>
         <index name="index2">
-            <element name="u_reference_2"/>
+            <element name="u_reference_5"/>
         </index>
         <index name="index3">
-            <element name="u_reference_3"/>
+            <element name="u_reference_2"/>
         </index>
         <index name="index4">
-            <element name="u_reference_1"/>
+            <element name="u_reference_3"/>
         </index>
         <index name="index5">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index6">
             <element name="u_reference_12"/>
         </index>
     </element>
