@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Requested Item Table" max_length="40" name="x_376817_requested_item_table" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" mandatory="true" max_length="40" name="u_choice_11" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Server Build" sequence="0" value="build"/>
+                <element inactive_on_update="false" label="Server Decommission" sequence="1" value="server decommission"/>
+                <element inactive_on_update="false" label="Space Increase" sequence="2" value="space increase"/>
+                <element inactive_on_update="false" label="Memory Increase" sequence="3" value="memory increase"/>
+                <element inactive_on_update="false" label="Other" sequence="4" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="pending" label="Primary Status" max_length="40" name="u_choice_16" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Work in Progress" sequence="1" value="wip"/>
+                <element inactive_on_update="false" label="Open" sequence="2" value="open"/>
+                <element inactive_on_update="false" label="Closed Complete" sequence="3" value="complete"/>
+                <element inactive_on_update="false" label="Closed Incomplete" sequence="4" value="incomplete"/>
+                <element inactive_on_update="false" label="Closed Skipped" sequence="5" value="skipped"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="pending" label="Secondary Status" max_length="40" name="u_choice_18" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Work in Progress" sequence="1" value="wip"/>
+                <element inactive_on_update="false" label="Open" sequence="2" value="open"/>
+                <element inactive_on_update="false" label="Closed Complete" sequence="3" value="complete"/>
+                <element inactive_on_update="false" label="Closed Incomplete" sequence="4" value="incomplete"/>
+                <element inactive_on_update="false" label="Closed Skipped" sequence="5" value="skipped"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" max_length="40" name="u_choice_7" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1 - Critical" sequence="0" value="critical"/>
+                <element inactive_on_update="false" label="2 - High" sequence="1" value="high"/>
+                <element inactive_on_update="false" label="3 - Moderate" sequence="2" value="moderate"/>
+                <element inactive_on_update="false" label="4 - Low" sequence="3" value="low"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="pending" label="State" max_length="40" name="u_choice_8" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Open" sequence="1" value="open"/>
+                <element inactive_on_update="false" label="Work in Progress" sequence="2" value="wip"/>
+                <element inactive_on_update="false" label="Closed Complete" sequence="3" value="complete"/>
+                <element inactive_on_update="false" label="Closed Incomplete" sequence="4" value="incomplete"/>
+                <element inactive_on_update="false" label="Closed Skipped" sequence="5" value="skipped"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_journal_14" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_journal_15" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_journal_17" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_journal_19" type="journal"/>
+        <element label="Primary Assignment Group" max_length="32" name="u_reference_1" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Primary Assigned To" max_length="32" name="u_reference_12" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Secondary Assignment Group" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element dependent="u_reference_2" dependent_on_field="u_reference_2" label="Secondary Assigned To" max_length="32" name="u_reference_3" reference="cmdb_ci_appl_dot_net" type="reference" use_dependent_field="true"/>
+        <element label="Requested for" max_length="32" name="u_reference_5" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="u_string_10" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary Assignment Group" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary Assigned to" max_length="40" name="u_string_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Request" max_length="40" name="u_string_4" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Secondary Assignment Group" max_length="40" name="u_string_5" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Approval" max_length="40" name="u_string_6" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Secondary Assigned to" max_length="40" name="u_string_7" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" mandatory="true" max_length="150" name="u_string_9" type="string"/>
+        <index name="index">
+            <element name="u_reference_5"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_2"/>
+        </index>
+        <index name="index3">
+            <element name="u_reference_3"/>
+        </index>
+        <index name="index4">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index5">
+            <element name="u_reference_12"/>
+        </index>
+    </element>
+</database>

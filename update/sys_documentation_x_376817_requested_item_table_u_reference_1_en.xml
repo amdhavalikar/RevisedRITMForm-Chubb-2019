@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_reference_1" label="Primary Assignment Group" language="en" table="x_376817_requested_item_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_reference_1</element>
+            <help/>
+            <hint/>
+            <label>Primary Assignment Group</label>
+            <language>en</language>
+            <name>x_376817_requested_item_table</name>
+            <plural>Primary Assignment Groups</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-18 15:29:10</sys_created_on>
+            <sys_id>66f4b6d4db7233002e722a9a489619fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Primary Assignment Group</sys_name>
+            <sys_package display_value="Requested Item" source="x_376817_requested">ae9fa2d0db7233002e722a9a4896197a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Requested Item">ae9fa2d0db7233002e722a9a4896197a</sys_scope>
+            <sys_update_name>sys_documentation_x_376817_requested_item_table_u_reference_1_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-18 15:29:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
