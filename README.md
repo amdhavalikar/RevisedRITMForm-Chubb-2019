@@ -125,13 +125,13 @@ The  revised  RITM  form  design  was  completed  primarily  on  the  ServiceNow
 
 To use the Application Studio and test applications on the Chubb instance (or any instance), the user MUST have the ‘admin’role, specifically for thefollowing:
 
-**4.1View/Edit Business Rules**
+**4.1 View/Edit Business Rules**
 
 Business  rules  are  generally  server-side  scripts  that  control  record/table  functions  within  ServiceNow. They play a largerole in the automation of form fields and notifications, as well as role vision.
 
 Administrator  access  is  required  to  view  and/or  edit  a  business  rule. Before  continuing  development,  it  is necessary to thoroughly study and implement business rules  similar to those  in the original form.The pre-existing  business  rules,  particularly  those  concerning  role  vision,  should  be  referenced  and  essentially mimicked in the new form, otherwise, security may not allow it to be putinto production. 
 
-**4.2Revising workflow**
+**4.2 Revising workflow**
 
 Workflow automates a sequence of activities, such as pushing notifications, approvals and scripts, for records. It is essential to the automation process because of its cause-and-effect event trigger.
 
@@ -145,9 +145,13 @@ Aworkflow should be implemented and tested thoroughlybefore attempting productio
 **Estimated time of completion:** 3 -6 months 
 
 *Understanding ServiceNow Developer platform (if applicable):2 weeks
+
 *Reviewing original RITM business rules, workflow, etc. before developing: 1 month
+
 *General form layout:1-2 days
+
 *Revising and implementing business rules, workflow, etc. in development:1 -2 months
+
 *Testing:1 –2 months
 
 **Estimated expense:** None
