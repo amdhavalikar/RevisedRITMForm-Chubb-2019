@@ -104,16 +104,14 @@ IF ACCESSING EXISTING FORM: Accessed from Application Studio by navigating to [A
 
 Visit https://developer.servicenow.com/ (Developer Homepage) and log in with the following credentials:
 
-Email:Allison.Aprile@Chubb.com
-Password:WHSritm01!
+**REQUEST**
 
 Navigate to Manage > Instance > dev69743.
 
 [NOTE:The  instance  will  be  automatically  released  if  unassessed  for  10  days.  ‘Remaining  inactivity’ specifies how much longer the technician has to a) Wake the instance from hibernation (as prompted by the system) or b) select ‘Extend instance’. With the completion of either open, the ‘Remaining inactivity’ will default back to 10 days.]
 
 Click the URL or navigate to https://dev69743.service-now.com/ and login with the following credentials:
-Username:admin
-Password:WHSritm01! 
+**REQUEST**
 
 Instance  should  mimic  main  ServiceNow  UI.  Proceed  to  the  Application  Studio/FormDesigner (Sections 3.2/3.3).
 
