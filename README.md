@@ -194,6 +194,7 @@ The documentation linked in Section is recommended for familiarizing the Studio 
 For any questions regarding continued development, reach out to Allison Aprile at the following:
 
 **Email (preferred):** allisonnicoleaprile@gmail.com
+
 **Mobile Phone:**(908) 442-2108
 
 
